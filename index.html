@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Enrollment Form</h1>
+
+        <h3>Instructions:</h3>
+        <ol>
+            <li>Fill in the form fields.</li>
+            <li>Check your interests.</li>
+            <li>Click "Enroll Now" to submit.</li>
+        </ol>
+
+        <form action="/submit" method="POST">
+            <label for="fullName" id="full-name">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required>
+
+            <label for="email" id="full-name">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+            <label>Sex:</label>
+            
+            <label for="male" id="male">Male</label>
+            <input type="radio" id="male" name="sex" value="Male" required>
+            
+            <label for="female" id="Female">Female</label>
+            <input type="radio" id="female" name="sex" value="Female" required>
+
+            <label for="course">Course Options:</label>
+            <select id="course" name="course" required>
+                <option value="">Select a course</option>
+                <option value="BSIT">BSIT</option>
+                <option value="BSSW">BSSW</option>
+                <option value="BSPA">BSPA</option>
+                <option value="DHRA">ARCHI</option>
+                <option value="BSAIS">BTVTE</option>
+            </select>
+
+            <label>Interests:</label>
+            <div id="interest">
+                <input type="checkbox" id="webDev" name="interests" value="Web Development">
+                <label for="webDev" id="webDev">Web Development</label>
+                <br>
+                <input type="checkbox" id="dataScience" name="interests" value="Data Science">
+                <label for="dataScience" id="dataScience">Data Science</label>
+                <br>
+                <input type="checkbox" id="networking" name="interests" value="Networking">
+                <label for="networking" id="networking">Networking</label>
+                <br>
+                <input type="checkbox" id="graphicDesign" name="interests" value="Graphic Design">
+                <label for="graphicDesign" id="graphicDesign">Graphic Design</label>
+            </div>
+
+
+            <button type="submit">Enroll Now</button>
+        </form>
+
+        <h3>Student Data</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Sex</th>
+                    <th>Course</th>
+                    <th>Interests</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>2</td>
+                    <td>zairesh Castillo</td>
+                    <td>zaicastillio@example.com</td>
+                    <td>20</td>
+                    <td>Female</td>
+                    <td>BSIT</td>
+                    <td>webDev</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Dwight Francis Canya</td>
+                    <td>canyadwight@example.com</td>
+                    <td>21</td>
+                    <td>Fale</td>
+                    <td>BSIT</td>
+                    <td>webdev database</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Allen Quinto</td>
+                    <td>johnOJohn@example.com</td>
+                    <td>19</td>
+                    <td>Male</td>
+                    <td>BSIT</td>
+                    <td>Full stack developer</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

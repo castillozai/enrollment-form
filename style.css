@@ -1,0 +1,134 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #89A8B2;
+}
+
+/* Center the content */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    background-image: url('background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 10);
+
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    color: black;
+    
+
+
+}
+
+/* Instructions styling */
+h3 {
+    color: black;
+    margin-bottom: 10px;
+    font-size: 30px;
+    padding-bottom: 25px;
+}
+
+ol li{
+    margin: 0 0 20px 20px;
+    color: black;
+    padding-bottom: 5px;
+}
+
+/* Form inputs */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, select, button, table {
+    font-size: 14px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Checkbox and radio button styling */
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Submit button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #89A8B2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #16c4a7;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+#webDev{
+    display: inline;
+}
+#dataScience{
+    display: inline;
+}
+#networking{
+    display: inline;
+}
+#graphicDesign{
+    display: inline;
+}
+#male{
+    display: inline;
+}
+#Female{
+    display: inline;
+}
+
+#full-name{
+    padding-bottom: 20px;
+    font-size: 25px;
+}
